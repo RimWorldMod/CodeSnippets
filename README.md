@@ -8,10 +8,10 @@ Please feel free to contribute code that others may find useful- this includes, 
 - Debugging utilities
 - Harmony patches
 
-All newly added items must be tagged with the Rimworld version they were written for. E.g.: `Inject_Designator_(A17).cs`
+All newly added items must be tagged with the Rimworld version they were written for. E.g.: `Inject Designator (A17).cs`
+Please include a description, and a few words on how to use the provided code.
+If your snippet has any dependencies other than the stock game, please list them and their versions.
 
-Please do not publish entire mods in this repository- snippets should be easy to browse and have a specific use case.
-
-If your snippet has any dependencies other than the stock game, please list them at the beginning of your file.
+It is recommended not to publish entire mods in this repository- snippets should be easy to browse and have a specific use case.
 
 If you have multiple files, please put them in a separate folder.
