@@ -1,6 +1,6 @@
 /*
 Injects a new modded WorkTypeDef into pawns in an existing saved game.
-Should be run each time a map is loaded.
+Should be run each time a map is loaded. Will have no effect on pawns that already "know" the provided work type.
 
 An injection is necessary, because the pawn work priority settings don't have the work type registered. This would produce exceptions when work givers would run or the Work tab is opened.
 
