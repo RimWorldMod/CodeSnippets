@@ -34,12 +34,12 @@ public static void EnsureAllColonistsKnowWorkType(WorkTypeDef def, Map map) {
 					injectedPawns.Add(pawn);
 				}
 				if (cyclesLeft == 0) {
-					throw new Exception(string.Format("Ran out of cycles while trying to pad work priorities array:  {0} {1} {2}", def.defName, pawn.Name, priorityList.Count));
+					throw new Exception(string.Format("Ran out of cycles while trying to pad work priorities array:  {0} {1} {2} {3}", def.defName, pawn.Name, priorityList.Count, Environment.StackTrace));
 				}
 			}
 		}
 		if (injectedPawns.Count > 0) {
-			Log.Message("Injected work type {0} into pawns: {1}", def.defName, injectedPawns.ListElements());
+			Log.Message("Injected work type {0} into pawns: {1}", def.defName, injectedPawns.Join(", ", true));
 		}
 	} catch (Exception e) {
 		Log.Error("Exception while injecting WorkTypeDef into colonist pawns: " + e);
